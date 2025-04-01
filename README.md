@@ -1,3 +1,6 @@
+# A Quick set up guide 
+-- Follow the mentioned Links for the same : https://trailhead.salesforce.com/content/learn/trails/build-lightning-web-components
+
 # Salesforce DX Project: Next Steps
 
 Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
