@@ -1,5 +1,6 @@
 # A Quick set up guide 
 -- Follow the mentioned Link for setting up the environment : https://trailhead.salesforce.com/content/learn/trails/build-lightning-web-components
+-- For the output : Please refer Output.png
 
 # Salesforce DX Project: Next Steps
 
