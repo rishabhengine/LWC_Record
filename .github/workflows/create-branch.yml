@@ -12,9 +12,11 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
         with:
-          repository: <span class="math-inline">{{ github.event.client_payload.repoUrl }}
-token: \${{ secrets.GITHUB_TOKEN }}
-- name: Create New Branch
-run: git checkout -b \${{ github.event.client_payload.branchName }}
-- name: Push Branch
-run: git push origin \</span>{{ github.event.client_payload.branchName }}
+          repository: ${{ github.event.client_payload.repoUrl }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Create New Branch
+        run: git checkout -b ${{ github.event.client_payload.branchName }}
+
+      - name: Push Branch
+        run: git push origin ${{ github.event.client_payload.branchName }}
