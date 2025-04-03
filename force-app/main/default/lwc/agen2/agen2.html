@@ -1,10 +1,10 @@
 ```html
 <template>
-  <div class="slds-page-header slds-page-header_record-home" role="banner">
-    <div class="slds-grid slds-grid_align-spread slds-grid_vertical-align-center" aria-label="Page Header">
-      <div class="slds-grid slds-grid_vertical-align-center">
+  <div class="slds-page-header slds-page-header_record-home" role="banner" aria-label="Page Header">
+    <div class="slds-grid slds-grid_align-spread slds-grid_vertical-align-center">
+      <div class="slds-grid slds-grid_vertical-align-center" aria-labelledby="profile-icon">
         <div class="slds-m-right_small">
-          <lightning-icon icon-name="standard:contact" alternative-text="Contact Profile Icon" size="large"></lightning-icon>
+          <lightning-icon icon-name="standard:contact" alternative-text="Contact Profile Icon" size="large" id="profile-icon"></lightning-icon>
         </div>
         <div>
           <h2 class="slds-text-title_caps">Contact</h2>
@@ -17,23 +17,23 @@
         <lightning-button label="Edit" variant="brand" class="slds-m-left_x-small"></lightning-button>
         <lightning-button label="New Case" variant="neutral" class="slds-m-left_x-small"></lightning-button>
         <lightning-button label="New Note" variant="neutral" class="slds-m-left_x-small"></lightning-button>
-        <lightning-button-icon icon-name="utility:down" alternative-text="More Actions Menu" class="slds-m-left_x-small" variant="border-filled"></lightning-button-icon>
+        <lightning-button-icon icon-name="utility:down" alternative-text="More Actions Menu" variant="border-filled" class="slds-m-left_x-small"></lightning-button-icon>
       </div>
     </div>
-    <div class="slds-grid slds-m-top_x-small slds-grid_align-spread" role="list" aria-label="Contact Information">
-      <div class="slds-col slds-size_1-of-5" role="listitem">
+    <div role="list" aria-label="Contact Information" class="slds-grid slds-m-top_x-small slds-grid_align-spread">
+      <div role="listitem" class="slds-col slds-size_1-of-5">
         <p class="slds-text-body_small"><strong>Title</strong><br>President and CEO</p>
       </div>
-      <div class="slds-col slds-size_1-of-5" role="listitem">
+      <div role="listitem" class="slds-col slds-size_1-of-5">
         <p class="slds-text-body_small"><strong>Account Name</strong><br><a href="#" aria-label="View Acme Account">Acme</a></p>
       </div>
-      <div class="slds-col slds-size_1-of-5" role="listitem">
+      <div role="listitem" class="slds-col slds-size_1-of-5">
         <p class="slds-text-body_small"><strong>Phone (2)</strong><br><a href="tel:(212) 555-5555" aria-label="Call (212) 555-5555">(212) 555-5555</a></p>
       </div>
-      <div class="slds-col slds-size_1-of-5" role="listitem">
+      <div role="listitem" class="slds-col slds-size_1-of-5">
         <p class="slds-text-body_small"><strong>Email</strong><br><a href="mailto:info@salesforce.com" aria-label="Send an email to info at salesforce dot com">info@salesforce.com</a></p>
       </div>
-      <div class="slds-col slds-size_1-of-5" role="listitem">
+      <div role="listitem" class="slds-col slds-size_1-of-5">
         <p class="slds-text-body_small"><strong>Contact Owner</strong><br>
           <lightning-icon icon-name="standard:user" alternative-text="Contact Owner User Icon" size="small"></lightning-icon>
           <a href="#" aria-label="View Admin User Profile">Admin User</a>
@@ -45,7 +45,7 @@
   <lightning-layout>
     <lightning-layout-item size="8">
       <lightning-tabset variant="scoped" aria-label="Contact Record Sections">
-        <lightning-tab label="Related" role="tabpanel">
+        <lightning-tab label="Related" role="tabpanel" aria-labelledby="tab-related">
           <div>
             <lightning-card title="Potential Duplicates">
               <lightning-layout multiple-rows="true" class="slds-p-around_medium">
@@ -132,7 +132,7 @@
           </div>
         </lightning-tab>
 
-        <lightning-tab label="Details" role="tabpanel">
+        <lightning-tab label="Details" role="tabpanel" aria-labelledby="tab-details">
           <div>
             <p>Contents for Details Tab</p>
           </div>
@@ -142,7 +142,7 @@
 
     <lightning-layout-item size="4">
       <lightning-tabset variant="scoped" aria-label="Activity and Chatter">
-        <lightning-tab label="Activity" role="tabpanel">
+        <lightning-tab label="Activity" role="tabpanel" aria-labelledby="tab-activity">
           <div class="slds-p-around_medium">
             <lightning-layout horizontal-align="space-around">
               <lightning-layout-item>
@@ -159,7 +159,7 @@
               </lightning-layout-item>
             </lightning-layout>
 
-            <div class="slds-m-top_medium ">
+            <div class="slds-m-top_medium">
               Filters: All time • All activities • All types
               <lightning-button-icon icon-name="utility:settings" variant="border-filled" class="slds-float_right" alternative-text="Settings"></lightning-button-icon>
             </div>
@@ -181,7 +181,7 @@
           </div>
         </lightning-tab>
 
-        <lightning-tab label="Chatter" role="tabpanel">
+        <lightning-tab label="Chatter" role="tabpanel" aria-labelledby="tab-chatter">
           <div>
             <p>Chatter content goes here</p>
           </div>
