@@ -1,209 +1,193 @@
+```html
 <template>
     <div class="slds-page-header slds-page-header_record-home" role="banner">
-      <div class="slds-grid slds-grid_align-spread slds-grid_vertical-align-center" role="group">
-          <div class="slds-grid slds-grid_vertical-align-center" role="group">
-              <div class="slds-m-right_small" role="presentation">
-                  <lightning-icon icon-name="standard:contact" alternative-text="Contact Profile Icon" size="large"></lightning-icon>
-              </div>
-              <div role="group">
-                  <p class="slds-text-title_caps" role="heading" >Contact</p>
-                  <h1 class="slds-text-heading_medium" id="contact-name" title = "name" role="heading">Rishab Bhardwaj</h1>
-              </div>
-          </div>
-          <div class="slds-grid slds-grid_align-end slds-m-left_auto" role="group">
-              <lightning-button-icon icon-name="utility:hierarchy" alternative-text="View hierarchy" variant="border-filled" role="button"></lightning-button-icon>
-              <lightning-button label="Follow" variant="neutral" class="slds-m-left_x-small" role="button"></lightning-button>
-              <lightning-button label="Edit" variant="brand" class="slds-m-left_x-small" role="button"></lightning-button>
-              <lightning-button label="New Case" variant="neutral" class="slds-m-left_x-small" role="button"></lightning-button>
-              <lightning-button label="New Note" variant="neutral" class="slds-m-left_x-small" role="button"></lightning-button>
-              <lightning-button-icon icon-name="utility:down" alternative-text="More Actions Menu" class="slds-m-left_x-small" variant="border-filled" role="button"></lightning-button-icon>
-          </div>
-      </div>
-      <br>
-      
-      <div class="slds-grid slds-m-top_x-small slds-grid_align-spread" role="group">
-          <div class="slds-col slds-size_1-of-5" role="region" aria-labelledby="title">
-              <p class="slds-text-body_small"><strong id="title">Title</strong><br>President and CEO</p>
-          </div>
-          <div class="slds-col slds-size_1-of-5" role="region" aria-labelledby="account-name">
-              <p class="slds-text-body_small"><strong id="account-name">Account Name</strong><br><a href="#" aria-label="View Acme Account">Acme</a></p>
-          </div>
-          <div class="slds-col slds-size_1-of-5" role="region" aria-labelledby="phone">
-              <p class="slds-text-body_small"><strong id="phone">Phone (2)</strong><br><a href="tel:(212) 555-5555" aria-label="Call (212) 555-5555">(212) 555-5555</a></p>
-          </div>
-          <div class="slds-col slds-size_1-of-5" role="region" aria-labelledby="email">
-              <p class="slds-text-body_small"><strong id="email">Email</strong><br><a href="mailto:info@salesforce.com" aria-label="Send an email to info at salesforce dot com">info@salesforce.com</a></p>
-          </div>
-          <div class="slds-col slds-size_1-of-5" role="region" aria-labelledby="contact-owner">
-              <p class="slds-text-body_small"><strong id="contact-owner">Contact Owner</strong><br>
-                  <lightning-icon icon-name="standard:user" alternative-text="Contact Owner User Icon" size="small"></lightning-icon>
-                  <a href="#" aria-label="View Admin User Profile">Admin User</a>
-              </p>
-          </div>
-      </div>
+        <div class="slds-grid slds-grid_align-spread slds-grid_vertical-align-center">
+            <div class="slds-grid slds-grid_vertical-align-center">
+                <div class="slds-m-right_small">
+                    <lightning-icon icon-name="standard:contact" alternative-text="Contact Profile Icon" size="large"></lightning-icon>
+                </div>
+                <div>
+                    <h2 class="slds-text-title_caps">Contact</h2>
+                    <h1 class="slds-text-heading_medium" id="contact-name" title="name">Rishab Bhardwaj</h1>
+                </div>
+            </div>
+            <div class="slds-grid slds-grid_align-end slds-m-left_auto">
+                <lightning-button-icon icon-name="utility:hierarchy" alternative-text="View hierarchy" variant="border-filled"></lightning-button-icon>
+                <lightning-button label="Follow" variant="neutral" class="slds-m-left_x-small"></lightning-button>
+                <lightning-button label="Edit" variant="brand" class="slds-m-left_x-small"></lightning-button>
+                <lightning-button label="New Case" variant="neutral" class="slds-m-left_x-small"></lightning-button>
+                <lightning-button label="New Note" variant="neutral" class="slds-m-left_x-small"></lightning-button>
+                <lightning-button-icon icon-name="utility:down" alternative-text="More Actions Menu" class="slds-m-left_x-small" variant="border-filled"></lightning-button-icon>
+            </div>
+        </div>
+        <div class="slds-grid slds-m-top_x-small slds-grid_align-spread">
+            <div class="slds-col slds-size_1-of-5" role="region" aria-labelledby="title">
+                <p class="slds-text-body_small"><strong id="title">Title</strong><br>President and CEO</p>
+            </div>
+            <div class="slds-col slds-size_1-of-5" role="region" aria-labelledby="account-name">
+                <p class="slds-text-body_small"><strong id="account-name">Account Name</strong><br><a href="#" aria-label="View Acme Account">Acme</a></p>
+            </div>
+            <div class="slds-col slds-size_1-of-5" role="region" aria-labelledby="phone">
+                <p class="slds-text-body_small"><strong id="phone">Phone (2)</strong><br><a href="tel:(212) 555-5555" aria-label="Call (212) 555-5555">(212) 555-5555</a></p>
+            </div>
+            <div class="slds-col slds-size_1-of-5" role="region" aria-labelledby="email">
+                <p class="slds-text-body_small"><strong id="email">Email</strong><br><a href="mailto:info@salesforce.com" aria-label="Send an email to info at salesforce dot com">info@salesforce.com</a></p>
+            </div>
+            <div class="slds-col slds-size_1-of-5" role="region" aria-labelledby="contact-owner">
+                <p class="slds-text-body_small"><strong id="contact-owner">Contact Owner</strong><br>
+                    <lightning-icon icon-name="standard:user" alternative-text="Contact Owner User Icon" size="small"></lightning-icon>
+                    <a href="#" aria-label="View Admin User Profile">Admin User</a>
+                </p>
+            </div>
+        </div>
     </div>
-  
-  
-  
+
     <lightning-layout>
-      <lightning-layout-item size = "8">
-    
-        <lightning-tabset variant="scoped" aria-label="Contact Record Tabs">
-            <lightning-tab label="Related" aria-labelledby="related-tab" role="tab">
-                <div role="tabpanel" aria-labelledby="related-tab">
-                    <lightning-card>
-                        <lightning-layout multiple-rows="true" class="slds-p-around_medium" role="alert">
-                            <lightning-layout-item flexibility="no-grow" class="slds-m-right_small slds-align-top">
-                                <lightning-icon icon-name="utility:warning" alternative-text="Alert" size="small"
-                                    class="slds-icon-text-warning">
-                                </lightning-icon>
-                            </lightning-layout-item>
-                            <lightning-layout-item flexibility="auto" class="slds-align-top">
-                                <h2 class="slds-text-heading_small slds-m-bottom_xx-small">
-                                    <strong>We found no potential duplicates of this Contact.</strong>
-                                </h2>
-                                <p>No duplicate les are activa.hjello world and write it downn Activate duplicate rules to identify potential duplicate records.</p>
-                            </lightning-layout-item>
-                        </lightning-layout>
-                    </lightning-card>
-  
-  
-                    <lightning-card>
-                        <lightning-layout multiple-rows="true" class="slds-p-around_medium slds-p-top_none"> 
-                            <lightning-layout-item flexibility="auto">
-                                <lightning-layout horizontal-align="space-between" class="slds-grid slds-gutters slds-wrap"> 
-                                    <lightning-layout-item class="slds-align-top">
-                                        <lightning-icon icon-name="standard:note" size="small"></lightning-icon>
-                                        <a href = "#"><span class="slds-text-heading_small slds-m-left_x-small"><strong>Opportunities (0)</strong></span></a>
-                                    </lightning-layout-item>
-                                    <lightning-layout-item class="slds-align-top slds-col_bump-left"> 
-                                        <lightning-button label="New"></lightning-button>
-                                    </lightning-layout-item>
-                                </lightning-layout>
-                            </lightning-layout-item>
-                        </lightning-layout>
-                    </lightning-card>
-  
-                    <lightning-card>
-                        <lightning-layout multiple-rows="true" class="slds-p-around_medium slds-p-top_none"> 
-                            <lightning-layout-item flexibility="auto">
-                                <lightning-layout horizontal-align="space-between" class="slds-grid slds-gutters slds-wrap"> 
-                                    <lightning-layout-item class="slds-align-top">
-                                        <lightning-icon icon-name="standard:note" size="small"></lightning-icon>
-                                        <a href = "#"><span class="slds-text-heading_small slds-m-left_x-small"><strong>Cases (0)</strong></span></a>
-                                    </lightning-layout-item>
-                                    <lightning-layout-item class="slds-align-top slds-col_bump-left"> 
-                                        <lightning-button label="New"></lightning-button>
-                                    </lightning-layout-item>
-                                </lightning-layout>
-                            </lightning-layout-item>
-                        </lightning-layout>
-                    </lightning-card>
-  
-                    <lightning-card>
-                        <lightning-layout multiple-rows="true" class="slds-p-around_medium slds-p-top_none"> 
-                            <lightning-layout-item flexibility="auto">
-                                <lightning-layout horizontal-align="space-between" class="slds-grid slds-gutters slds-wrap"> 
-                                    <lightning-layout-item class="slds-align-top">
-                                        <lightning-icon icon-name="standard:note" size="small"></lightning-icon>
-                                        <a href = "#"><span class="slds-text-heading_small slds-m-left_x-small"><strong>Campaign History (0)</strong></span></a>
-                                       
-                                    </lightning-layout-item>
-                                    <lightning-layout-item class="slds-align-top slds-col_bump-left"> 
-                                        <lightning-button label="Add to Campaign"></lightning-button>
-                                    </lightning-layout-item>
-                                </lightning-layout>
-                            </lightning-layout-item>
-                        </lightning-layout>
-                    </lightning-card>
+        <lightning-layout-item size="8">
+            <lightning-tabset variant="scoped" aria-label="Contact Record Tabs">
+                <lightning-tab label="Related" aria-labelledby="related-tab">
+                    <div role="tabpanel" aria-labelledby="related-tab">
+                        <lightning-card>
+                            <lightning-layout multiple-rows="true" class="slds-p-around_medium" role="alert">
+                                <lightning-layout-item class="slds-m-right_small slds-align-top">
+                                    <lightning-icon icon-name="utility:warning" alternative-text="Alert" size="small" class="slds-icon-text-warning"></lightning-icon>
+                                </lightning-layout-item>
+                                <lightning-layout-item class="slds-align-top">
+                                    <h2 class="slds-text-heading_small slds-m-bottom_xx-small">
+                                        <strong>We found no potential duplicates of this Contact.</strong>
+                                    </h2>
+                                    <p>No duplicate rules are active. Activate duplicate rules to identify potential duplicate records.</p>
+                                </lightning-layout-item>
+                            </lightning-layout>
+                        </lightning-card>
 
-                    <lightning-card>
-                        <lightning-layout multiple-rows="true" class="slds-p-around_medium slds-p-top_none">
-                            <lightning-layout-item flexibility="auto">
-                                <lightning-layout horizontal-align="space-between" class="slds-grid slds-gutters slds-wrap">
-                                    <lightning-layout-item>
-                                        <lightning-layout vertical-align="center">
+                        <lightning-card>
+                            <lightning-layout multiple-rows="true" class="slds-p-around_medium slds-p-top_none">
+                                <lightning-layout-item>
+                                    <lightning-layout horizontal-align="space-between" class="slds-grid slds-gutters slds-wrap">
+                                        <lightning-layout-item class="slds-align-top">
                                             <lightning-icon icon-name="standard:note" size="small"></lightning-icon>
-                                            <a href = "#"><span class="slds-text-heading_small slds-m-left_x-small"><strong>Notes & Attachments (0)</strong></span></a>
-                                        </lightning-layout>
-                                    </lightning-layout-item>
-                                    <lightning-layout-item class="slds-align-top slds-col_bump-left">
-                                        <lightning-button label="Upload Files"></lightning-button>
-                                    </lightning-layout-item>
-                                </lightning-layout>
+                                            <a href="#"><span class="slds-text-heading_small slds-m-left_x-small"><strong>Opportunities (0)</strong></span></a>
+                                        </lightning-layout-item>
+                                        <lightning-layout-item class="slds-align-top slds-col_bump-left">
+                                            <lightning-button label="New"></lightning-button>
+                                        </lightning-layout-item>
+                                    </lightning-layout>
+                                </lightning-layout-item>
+                            </lightning-layout>
+                        </lightning-card>
+
+                        <lightning-card>
+                            <lightning-layout multiple-rows="true" class="slds-p-around_medium slds-p-top_none">
+                                <lightning-layout-item>
+                                    <lightning-layout horizontal-align="space-between" class="slds-grid slds-gutters slds-wrap">
+                                        <lightning-layout-item class="slds-align-top">
+                                            <lightning-icon icon-name="standard:note" size="small"></lightning-icon>
+                                            <a href="#"><span class="slds-text-heading_small slds-m-left_x-small"><strong>Cases (0)</strong></span></a>
+                                        </lightning-layout-item>
+                                        <lightning-layout-item class="slds-align-top slds-col_bump-left">
+                                            <lightning-button label="New"></lightning-button>
+                                        </lightning-layout-item>
+                                    </lightning-layout>
+                                </lightning-layout-item>
+                            </lightning-layout>
+                        </lightning-card>
+
+                        <lightning-card>
+                            <lightning-layout multiple-rows="true" class="slds-p-around_medium slds-p-top_none">
+                                <lightning-layout-item>
+                                    <lightning-layout horizontal-align="space-between" class="slds-grid slds-gutters slds-wrap">
+                                        <lightning-layout-item class="slds-align-top">
+                                            <lightning-icon icon-name="standard:note" size="small"></lightning-icon>
+                                            <a href="#"><span class="slds-text-heading_small slds-m-left_x-small"><strong>Campaign History (0)</strong></span></a>
+                                        </lightning-layout-item>
+                                        <lightning-layout-item class="slds-align-top slds-col_bump-left">
+                                            <lightning-button label="Add to Campaign"></lightning-button>
+                                        </lightning-layout-item>
+                                    </lightning-layout>
+                                </lightning-layout-item>
+                            </lightning-layout>
+                        </lightning-card>
+
+                        <lightning-card>
+                            <lightning-layout multiple-rows="true" class="slds-p-around_medium slds-p-top_none">
+                                <lightning-layout-item>
+                                    <lightning-layout horizontal-align="space-between" class="slds-grid slds-gutters slds-wrap">
+                                        <lightning-layout-item>
+                                            <lightning-layout vertical-align="center">
+                                                <lightning-icon icon-name="standard:note" size="small"></lightning-icon>
+                                                <a href="#"><span class="slds-text-heading_small slds-m-left_x-small"><strong>Notes & Attachments (0)</strong></span></a>
+                                            </lightning-layout>
+                                        </lightning-layout-item>
+                                        <lightning-layout-item class="slds-align-top slds-col_bump-left">
+                                            <lightning-button label="Upload Files"></lightning-button>
+                                        </lightning-layout-item>
+                                    </lightning-layout>
+                                </lightning-layout-item>
+                            </lightning-layout>
+
+                            <div class="slds-box slds-box_x-small slds-p-around_medium slds-text-align_center slds-border_dashed">
+                                <lightning-button variant="base" label="Upload Files" icon-name="utility:upload" icon-position="left"></lightning-button>
+                                <p class="slds-p-top_small">Or drop files</p>
+                            </div>
+                        </lightning-card>
+                    </div>
+                </lightning-tab>
+
+                <lightning-tab label="Details" aria-labelledby="details-tab">
+                    <div role="tabpanel" aria-labelledby="details-tab">
+                        <p>Content for Details Tab</p>
+                    </div>
+                </lightning-tab>
+            </lightning-tabset>
+        </lightning-layout-item>
+
+        <lightning-layout-item size="4">
+            <lightning-tabset variant="scoped">
+                <lightning-tab label="Activity">
+                    <div class="slds-p-around_medium">
+                        <lightning-layout horizontal-align="space-around">
+                            <lightning-layout-item>
+                                <lightning-button-icon icon-name="standard:task" variant="border-filled"></lightning-button-icon>
                             </lightning-layout-item>
-            
+                            <lightning-layout-item>
+                                <lightning-button-icon icon-name="standard:event" variant="border-filled"></lightning-button-icon>
+                            </lightning-layout-item>
+                            <lightning-layout-item>
+                                <lightning-button-icon icon-name="standard:log_a_call" variant="border-filled"></lightning-button-icon>
+                            </lightning-layout-item>
+                            <lightning-layout-item>
+                                <lightning-button-icon icon-name="standard:email" variant="border-filled"></lightning-button-icon>
+                            </lightning-layout-item>
                         </lightning-layout>
 
-                        
-
-                        <div class="slds-box slds-box_x-small slds-p-around_medium slds-text-align_center slds-border_dashed">
-                            <lightning-button variant="base" label="Upload Files" icon-name="utility:upload" icon-position="left"></lightning-button>
-                            <p class="slds-p-top_small">Or drop files</p>
+                        <div class="slds-m-top_medium">
+                            Filters: All time • All activities • All types
+                            <lightning-button-icon icon-name="utility:settings" variant="border-filled" class="slds-float_right"></lightning-button-icon>
                         </div>
-                    </lightning-card>
-                </div>
-            </lightning-tab>
-          
-            <lightning-tab label="Details" aria-labelledby="details-tab" role="tab">
-                <div role="tabpanel" aria-labelledby="details-tab">
-                    <p>Contensst for Detaidddls Tab</p> 
-                 </div>
-            </lightning-tab>
-        </lightning-tabset>
-      
-  
-      </lightning-layout-item>
 
-      <lightning-layout-item size="4">
-                
-        <lightning-tabset variant="scoped">
-            <lightning-tab label="Activity">
-                <div class="slds-p-around_medium">
-                    <lightning-layout horizontal-align="space-around">
-                        <lightning-layout-item>
-                            <lightning-button-icon icon-name="standard:task" variant="border-filled"></lightning-button-icon>
-                        </lightning-layout-item>
-                        <lightning-layout-item>
-                            <lightning-button-icon icon-name="standard:event" variant="border-filled"></lightning-button-icon>
-                        </lightning-layout-item>
-                        <lightning-layout-item>
-                            <lightning-button-icon icon-name="standard:log_a_call" variant="border-filled"></lightning-button-icon>
-                        </lightning-layout-item>
-                        <lightning-layout-item>
-                            <lightning-button-icon icon-name="standard:email" variant="border-filled"></lightning-button-icon>
-                        </lightning-layout-item>
-                    </lightning-layout>
+                        <div class="slds-m-top_small">
+                            <a href="#">Refresh</a> •
+                            <a href="#">Expand All</a> •
+                            <a href="#">View All</a>
+                        </div>
 
-                    <div class="slds-m-top_medium ">
-                        Filtessss: All time • All activities • All types
-                        <lightning-button-icon icon-name="utility:settings" variant="border-filled" class="slds-float_right"></lightning-button-icon>
+                        <lightning-accordion class="slds-m-top_medium">
+                            <lightning-accordion-section label="Upcoming & Overdue">
+                                <p>No activities to show.</p>
+                                <p>Get started by sending an email, scheduling a task, and more.</p>
+                            </lightning-accordion-section>
+                        </lightning-accordion>
+
+                        <p class="slds-m-top_medium">No past activity. Past meetings and tasks marked as done show up here.</p>
                     </div>
+                </lightning-tab>
 
-                    <div class="slds-m-top_small ">
-                        <a href="#">Refresh</a> •
-                        <a href="#">Expand All</a> •
-                        <a href="#">View All</a>
-                    </div>
-
-                    <lightning-accordion class="slds-m-top_medium">
-                        <lightning-accordion-section label="Upcoming & Overdue">
-                            <p>No activities to show.</p>
-                            <p>Get started by sending an email, scheduling a task, and more.</p>
-                        </lightning-accordion-section>
-                    </lightning-accordion>
-
-                    <p class="slds-m-top_medium">No past activity. Past meetings and tasks marked as done show up here.</p>
-                </div>
-            </lightning-tab>
-
-            <lightning-tab label="Chatter">
-                <p>Chatter content goes here</p>
-            </lightning-tab>
-    
-
-        </lightning-tabset>
-
-      </lightning-layout-item>
-  </lightning-layout>
-  </template>
+                <lightning-tab label="Chatter">
+                    <p>Chatter content goes here</p>
+                </lightning-tab>
+            </lightning-tabset>
+        </lightning-layout-item>
+    </lightning-layout>
+</template>
+```
