@@ -2,7 +2,7 @@
 <template>
   <div class="slds-page-header slds-page-header_record-home" role="banner" aria-labelledby="contact-title contact-name">
     <div class="slds-grid slds-grid_align-spread slds-grid_vertical-align-center" aria-label="Header">
-      <div class="slds-grid slds-grid_vertical-align-center" aria-labelledby="contact-title">
+      <div class="slds-grid slds-grid_vertical-align-center" role="group" aria-labelledby="contact-title">
         <div class="slds-m-right_small">
           <lightning-icon icon-name="standard:contact" alternative-text="Contact Profile Icon" size="large"></lightning-icon>
         </div>
@@ -11,7 +11,7 @@
           <h1 class="slds-text-heading_medium" id="contact-name" title="Rishab Bhardwaj">Rishab Bhardwaj</h1>
         </div>
       </div>
-      <div class="slds-grid slds-grid_align-end slds-m-left_auto" aria-label="Actions">
+      <div class="slds-grid slds-grid_align-end slds-m-left_auto" role="group" aria-label="Actions">
         <lightning-button-icon icon-name="utility:hierarchy" alternative-text="View hierarchy" variant="border-filled"></lightning-button-icon>
         <lightning-button label="Follow" variant="neutral" class="slds-m-left_x-small"></lightning-button>
         <lightning-button label="Edit" variant="brand" class="slds-m-left_x-small"></lightning-button>
@@ -45,7 +45,7 @@
   <lightning-layout>
     <lightning-layout-item size="8">
       <lightning-tabset variant="scoped" aria-label="Contact Record Tabs">
-        <lightning-tab label="Related" id="related-tab" aria-controls="related-panel" aria-labelledby="related-tab">
+        <lightning-tab label="Related" id="related-tab" aria-controls="related-panel">
           <div id="related-panel" role="tabpanel" aria-labelledby="related-tab">
             <lightning-card>
               <lightning-layout multiple-rows="true" class="slds-p-around_medium" role="alert">
@@ -134,7 +134,7 @@
           </div>
         </lightning-tab>
 
-        <lightning-tab label="Details" id="details-tab" aria-controls="details-panel" aria-labelledby="details-tab">
+        <lightning-tab label="Details" id="details-tab" aria-controls="details-panel">
           <div id="details-panel" role="tabpanel" aria-labelledby="details-tab">
             <p>Contents for Details Tab</p>
           </div>
@@ -144,7 +144,7 @@
 
     <lightning-layout-item size="4">
       <lightning-tabset variant="scoped" aria-label="Activity and Chatter Tabs">
-        <lightning-tab label="Activity" id="activity-tab" aria-controls="activity-panel" aria-labelledby="activity-tab">
+        <lightning-tab label="Activity" id="activity-tab" aria-controls="activity-panel">
           <div id="activity-panel" class="slds-p-around_medium" role="tabpanel" aria-labelledby="activity-tab">
             <lightning-layout horizontal-align="space-around" class="slds-wrap">
               <lightning-layout-item>
@@ -183,7 +183,7 @@
           </div>
         </lightning-tab>
 
-        <lightning-tab label="Chatter" id="chatter-tab" aria-controls="chatter-panel" aria-labelledby="chatter-tab">
+        <lightning-tab label="Chatter" id="chatter-tab" aria-controls="chatter-panel">
           <div id="chatter-panel" role="tabpanel" aria-labelledby="chatter-tab">
             <p>Chatter content goes here</p>
           </div>
