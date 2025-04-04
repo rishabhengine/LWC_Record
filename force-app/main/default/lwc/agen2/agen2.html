@@ -1,8 +1,8 @@
 ```html
 <template>
-  <div class="slds-page-header slds-page-header_record-home" role="banner">
+  <div class="slds-page-header slds-page-header_record-home" role="banner" aria-labelledby="contact-title contact-name">
     <div class="slds-grid slds-grid_align-spread slds-grid_vertical-align-center" aria-label="Header">
-      <div class="slds-grid slds-grid_vertical-align-center" aria-label="Contact Info">
+      <div class="slds-grid slds-grid_vertical-align-center" aria-labelledby="contact-title">
         <div class="slds-m-right_small">
           <lightning-icon icon-name="standard:contact" alternative-text="Contact Profile Icon" size="large"></lightning-icon>
         </div>
@@ -45,8 +45,8 @@
   <lightning-layout>
     <lightning-layout-item size="8">
       <lightning-tabset variant="scoped" aria-label="Contact Record Tabs">
-        <lightning-tab label="Related" id="related-tab" aria-labelledby="related-tab">
-          <div role="tabpanel" aria-labelledby="related-tab">
+        <lightning-tab label="Related" id="related-tab" aria-controls="related-panel" aria-labelledby="related-tab">
+          <div id="related-panel" role="tabpanel" aria-labelledby="related-tab">
             <lightning-card>
               <lightning-layout multiple-rows="true" class="slds-p-around_medium" role="alert">
                 <lightning-layout-item flexibility="no-grow" class="slds-m-right_small slds-align-top">
@@ -134,8 +134,8 @@
           </div>
         </lightning-tab>
 
-        <lightning-tab label="Details" id="details-tab" aria-labelledby="details-tab">
-          <div role="tabpanel" aria-labelledby="details-tab">
+        <lightning-tab label="Details" id="details-tab" aria-controls="details-panel" aria-labelledby="details-tab">
+          <div id="details-panel" role="tabpanel" aria-labelledby="details-tab">
             <p>Contents for Details Tab</p>
           </div>
         </lightning-tab>
@@ -144,8 +144,8 @@
 
     <lightning-layout-item size="4">
       <lightning-tabset variant="scoped" aria-label="Activity and Chatter Tabs">
-        <lightning-tab label="Activity" id="activity-tab" aria-labelledby="activity-tab">
-          <div class="slds-p-around_medium">
+        <lightning-tab label="Activity" id="activity-tab" aria-controls="activity-panel" aria-labelledby="activity-tab">
+          <div id="activity-panel" class="slds-p-around_medium" role="tabpanel" aria-labelledby="activity-tab">
             <lightning-layout horizontal-align="space-around" class="slds-wrap">
               <lightning-layout-item>
                 <lightning-button-icon icon-name="standard:task" variant="border-filled" alternative-text="Add Task"></lightning-button-icon>
@@ -183,8 +183,8 @@
           </div>
         </lightning-tab>
 
-        <lightning-tab label="Chatter" id="chatter-tab" aria-labelledby="chatter-tab">
-          <div role="tabpanel" aria-labelledby="chatter-tab">
+        <lightning-tab label="Chatter" id="chatter-tab" aria-controls="chatter-panel" aria-labelledby="chatter-tab">
+          <div id="chatter-panel" role="tabpanel" aria-labelledby="chatter-tab">
             <p>Chatter content goes here</p>
           </div>
         </lightning-tab>
